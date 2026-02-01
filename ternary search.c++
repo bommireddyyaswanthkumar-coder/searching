@@ -7,7 +7,6 @@ int ternarySearch(vector<int>& a) {
     while (r - l > 2) {
         int m1 = l + (r - l) / 3;
         int m2 = r - (r - l) / 3;
-
         if (a[m1] < a[m2])
             l = m1;
         else
